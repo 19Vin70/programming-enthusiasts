@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9%;
+}
+
+.container {
+  background: #000;
+  height: 100vh;
+}
+
+/* Header Section Start */
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: #333;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  z-index: 999;
+}
+
+.header .logo {
+  color: #fff;
+  font-size: 23px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Header Section End */
+/* Navbar Section Start */
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background: #333;
+  height: 80px;
+  z-index: 999;
+}
+
+.navbar a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: #777;
+  transition: .3s;
+}
+
+/* Navbar Section End */
+/* Home Section Start */
+
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.home .home-content {
+  color: #fff;
+  position: relative;
+}
+
+.home .home-content h2 {
+  font-size: 40px;
+}
+
+.home .home-content h1 {
+  font-size: 60px;
+}
+
+.home .home-content h3 {
+  font-size: 28px;
+}
+
+.home img {
+  width: 400px;
+}
+
+/* Home Section End */
+/* About Section Start */
+
+.about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about img {
+  width: 350px;
+}
+
+.about .about-content {
+  position: relative;
+}
+
+.about .about-content h2 {
+  font-size: 28px;
+}
+
+.about .about-content p {
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .home img {
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about .about-content h2 {
+    font-size: 25px;
+  }
+  
+  .about .about-content p {
+    font-size: 18px;
+  }
+}
